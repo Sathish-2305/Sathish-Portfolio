@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sathish — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+  <style>
+    /* Inline animated gradient for nav name */
+    .nav-name {
+      display: inline-block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      margin-left: 10px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      background: linear-gradient(90deg, #ff6a00, #ff0080, #8a2be2, #00d4ff, #00ff99);
+      background-size: 400% 400%;
+      /* define standard property for compatibility, then keep vendor-prefixed for WebKit */
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 6s ease infinite;
+      font-size: 18px;
+      line-height: 20px;
+      vertical-align: middle;
+    }
+
+    /* Ensure logo and name align and share sizing */
+    .nav-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-logo img {
+      height: 20px;
+      width: auto;
+      display: block;
+    }
+
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="pcv"></canvas>
+<div id="c-dot"></div>
+<div id="c-ring"></div>
+<div class="toast" id="toast">✓ Copied!</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">
+    <img src="S logo.png" alt="Large stylized letter S logo, white glowing with vertical glitch stripes on a black background, conveying a bold modern and futuristic tone" style="height: 20px; width: auto;">
+    <span class="nav-name">Sathish-Portfolio</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="btn-primary">Let's Talk ↗</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="h-bg"></div>
+  <div class="h-grid"></div>
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
+  <div class="h-content">
+    <div class="h-eyebrow"><i></i> Available for freelance</div>
+    <h1 class="h-title">
+      <span class="h-line1">Crafting Digital</span>
+      <span class="h-line2">Experiences</span>
+    </h1>
+    <p class="h-sub">I design and build products that live at the intersection of beauty and function — turning complex ideas into seamless, memorable interfaces.</p>
+    <div class="h-ctas">
+      <a href="#works" class="btn-primary">View My Work ↓</a>
+      <a href="#contact" class="btn-ghost">Get In Touch</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- MAIN MARQUEE -->
+<div class="main-marquee">
+  <div class="mm-track">
+    <span class="mm-item">UI/UX Design <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Brand Identity <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Motion Design <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Web Development <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Design Systems <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Prototyping <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Creative Direction <span class="mm-sep">✦</span></span>
+    <span class="mm-item">User Research <span class="mm-sep">✦</span></span>
+    <span class="mm-item">UI/UX Design <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Brand Identity <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Motion Design <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Web Development <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Design Systems <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Prototyping <span class="mm-sep">✦</span></span>
+    <span class="mm-item">Creative Direction <span class="mm-sep">✦</span></span>
+    <span class="mm-item">User Research <span class="mm-sep">✦</span></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-inner">
+    <div class="reveal" style="display:flex;justify-content:center;position:relative">
+      <div class="about-frame" style="width:220px;height:220px;border-radius:16px;padding:4px;background:linear-gradient(135deg,#7c3aed,#06b6d4);box-shadow:0 8px 20px rgba(12,12,12,.25);">
+        <img src="S logo.png" alt="Stylized white capital S with vertical glitch stripes and a luminous glow centered on a black background. The S is vertically sliced by digital distortion, creating a futuristic, high contrast, techno aesthetic. Transcribed text: S. Emotional tone: bold, modern, slightly mysterious and glitchy." class="about-img" style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:block;background:#000;">
+      </div>
+      <div class="about-badge">
+        <div class="badge-num">2+</div>
+        <div class="badge-lbl">Years of craft</div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:.15s">
+      <div class="s-label">About Me</div>
+      <h2 class="s-title">Designer who thinks<br><em style="font-style:italic;color:var(--cyan)">in systems</em></h2>
+      <p>Hi, I'm Sathish Kumar
+
+A Visual & UX Designer passionate about transforming concepts into engaging digital experiences. I craft websites, brand identities, and marketing visuals that not only look great but tell compelling stories.</p>
+      <p>My process starts with deep user empathy, moves through rapid iteration, and ends with polished production-ready work that exceeds expectations.</p>
+      <div class="skill-chips">
+        <div class="chip"><span class="chip-dot"></span>Figma &amp; WordPress</div>
+        <div class="chip"><span class="chip-dot"></span>HTML / CSS / JS</div>
+        <div class="chip"><span class="chip-dot"></span>Flutterflow &amp; Webflow</div>
+        <div class="chip"><span class="chip-dot"></span>Affinity </div>
+        <div class="chip"><span class="chip-dot"></span>Framer</div>
+        <div class="chip"><span class="chip-dot"></span>Branding &amp; Identity</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SHOWCASE MARQUEE -->
+<section id="skills">
+  <div class="skills-hd reveal">
+    <div class="s-label">Skills &amp; Tools</div>
+    <h2 class="s-title">Craft built on a deep stack</h2>
+    <p class="s-sub">Hover any row to pause — every tool here has shipped real work.</p>
+  </div>
+
+  <div class="sk-block">
+    <div class="sk-row" id="sr1"></div>
+    <div class="sk-row" id="sr2"></div>
+    <div class="sk-row" id="sr3"></div>
+  </div>
+
+  <div class="tools-row reveal">
+    <div class="tool-b">🎨 Figma</div>
+    <div class="tool-b">⚡ Framer</div>
+    <div class="tool-b">🌀 Afinity</div>
+    <div class="tool-b">🖥️ VS Code</div>
+    <div class="tool-b">🎨 Tailwind CSS</div>
+    <div class="tool-b">🔺 Microsoft Design</div>
+    <div class="tool-b">🎭 Webflow</div>
+    <div class="tool-b">🐙 GitHub</div>
+    <div class="tool-b">📦 Notion</div>
+    <div class="tool-b">✏️ Generative AI</div>
+    <div class="tool-b">🔷 Flutterflow</div>
+    <div class="tool-b">📊 Digital Marketing</div>
+  </div>
+</section>
+
+<!-- STATS -->
+<!-- animated gradient text + bigger sizes -->
+<style>
+  .stats .stat-num{ font-size:48px; font-weight:700; line-height:1; display:block }
+  .stats .stat-lbl{ font-size:18px; opacity:0.95 }
+  .gradient-text{ background: linear-gradient(90deg,#8e43e3,#3ce3c7,#5a00ff,#00c6ff); background-size:300% 300%; -webkit-background-clip:text; background-clip:text; color:transparent; animation:gradMove 6s linear infinite }
+  @keyframes gradMove{ 0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%} }
+</style>
+
+<div class="stats" style="background: linear-gradient(135deg, #000000 0%, #36204c 50%, #140516 100%); background-size: 400% 400%; animation: gradient 15s ease infinite;">
+  <div class="stats-in" style="display: flex; justify-content: center; align-items: center;">
+    <div class="reveal"><span class="stat-num gradient-text" data-n="10">0</span><div class="stat-lbl">Projects Delivered</div></div>
+    <div class="s-div"></div>
+    <div class="reveal" style="transition-delay:.1s"><span class="stat-num gradient-text" data-n="8">0</span><div class="stat-lbl">Happy Clients</div></div>
+    <div class="s-div"></div>
+    <div class="reveal" style="transition-delay:.2s"><span class="stat-num gradient-text" data-n="2">0</span><div class="stat-lbl">Years Experience</div></div>
+    <div class="s-div"></div>
+    <div class="reveal" style="transition-delay:.3s"><span class="stat-num gradient-text" data-n="100">0</span><div class="stat-lbl">% Satisfaction</div></div>
+  </div>
+</div>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="works-hd reveal">
+    <div class="s-label">Selected Work</div>
+    <h2 class="s-title">Projects that define the craft</h2>
+  </div>
+  <div class="works-grid">
+    <div class="wcard feat reveal">
+      <div class="w-img"><div class="w-fill wc1">🌌</div><div class="w-ov"><a href="https://www.behance.net/gallery/233464593/AERONOVA-booking-and-improve-traveler-experience" class="w-ov-link">View Case Study ↗</a></div></div>
+      <div class="w-info"><div class="w-tags"><span class="wtag">UI/UX</span><span class="wtag tv">Web App</span></div><div class="w-ttl">Aero Nova — SaaS Dashboard</div><p class="w-desc">Designed a clean and modern experience focused on usability, accessibility, and efficient information architecture, helping users access critical flight data quickly and seamlessly.</p></div>
+    </div>
+    <div class="wcard reveal" style="transition-delay:.1s">
+      <div class="w-img"><div class="w-fill wc2">🧬</div><div class="w-ov"><a href="https://drive.google.com/file/d/10VcccGrP9YTOcJ8yLcAfJIEw4OSdbxfC/view?usp=drivesdk" class="w-ov-link">View Case Study ↗</a></div></div>
+      <div class="w-info"><div class="w-tags"><span class="wtag tr">Branding</span><span class="wtag">Identity</span></div><div class="w-ttl">Recreate — Brand</div><p class="w-desc">Full brand identity A modern, premium, and trustworthy logo that represents Aditi Housing and its commitment to quality real estate developments.</p></div>
+    </div>
+    <div class="wcard reveal" style="transition-delay:.2s">
+      <div class="w-img"><div class="w-fill wc3">📱</div><div class="w-ov"><a href="https://www.behance.net/gallery/230141781/Turf-Booking-Mobile-App" class="w-ov-link">View Case Study ↗</a></div></div>
+      <div class="w-info"><div class="w-tags"><span class="wtag">Mobile</span><span class="wtag tv">iOS &amp; Android</span></div><div class="w-ttl">Turfy-Mobile App</div><p class="w-desc">Mindfulness app with 4.8★ rating and 50k+ downloads.</p></div>
+    </div>
+    <div class="wcard reveal" style="transition-delay:.1s">
+      <div class="w-img"><div class="w-fill wc4">🔥</div><div class="w-ov"><a href="https://www.behance.net/gallery/233952703/B2B-Cloud-Cost-Service" class="w-ov-link">View Case Study ↗</a></div></div>
+      <div class="w-info"><div class="w-tags"><span class="wtag tr">B2B</span><span class="wtag">Cloud</span></div><div class="w-ttl">B2B - Cloud Cost Service</div><p class="w-desc">Designed a streamlined cloud service platform that brings essential business operations into a single dashboard. The experience prioritizes usability, accessibility, and scalability, allowing teams to manage resources efficiently while maintaining enterprise-grade security.</p></div>
+    </div>
+    <div class="wcard reveal" style="transition-delay:.2s">
+      <div class="w-img"><div class="w-fill wc5">🌊</div><div class="w-ov"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7469717245686915072/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BtMP8EGZpRAmGGp4XMu9pag%3D%3D" class="w-ov-link">View Case Study ↗</a></div></div>
+      <div class="w-info"><div class="w-tags"><span class="wtag">Website</span><span class="wtag tv">Branding</span></div><div class="w-ttl">Recreate — Website</div><p class="w-desc">The discovery phase focused on understanding Aditi Housing's business objectives, target audience, and project requirements. We analyzed existing real estate websites, identified user pain points, and gathered insights to create a modern digital experience.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="svc-in">
+    <div class="reveal">
+      <div class="s-label">What I Do</div>
+      <h2 class="s-title">Services built for impact at every scale</h2>
+      <p class="s-sub">From early-stage validation to enterprise design systems — structure and beauty in every challenge.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="scard reveal"><div class="s-ico">✦</div><div class="s-name">UI/UX Design</div><p class="s-desc">Research-backed interfaces that balance aesthetics with usability.</p><ul class="s-list"><li>User research &amp; testing</li><li>Wireframing &amp; prototyping</li><li>Visual &amp; interaction design</li></ul></div>
+      <div class="scard reveal" style="transition-delay:.1s"><div class="s-ico">◈</div><div class="s-name">Brand Identity</div><p class="s-desc">Cohesive visual identities that communicate values with precision.</p><ul class="s-list"><li>Logo &amp; visual system</li><li>Brand guidelines</li><li>Motion identity</li></ul></div>
+      <div class="scard reveal" style="transition-delay:.2s"><div class="s-ico">⬡</div><div class="s-name">Web Development</div><p class="s-desc">Clean, performant front-end code that brings designs to life.</p><ul class="s-list"><li>HTML/CSS/JS, React</li><li>Framer &amp; Webflow</li><li>Performance optimization</li></ul></div>
+      <div class="scard reveal" style="transition-delay:.1s"><div class="s-ico">◎</div><div class="s-name">Design Systems</div><p class="s-desc">Scalable component libraries that unify teams and accelerate delivery.</p><ul class="s-list"><li>Token architecture</li><li>Component docs</li><li>Team handoff</li></ul></div>
+      <div class="scard reveal" style="transition-delay:.2s"><div class="s-ico">▲</div><div class="s-name">Motion Design</div><p class="s-desc">Purposeful animations that guide attention and add delight.</p><ul class="s-list"><li>Micro-interactions</li><li>Scroll animations</li><li>After Effects &amp; Lottie</li></ul></div>
+      <div class="scard reveal" style="transition-delay:.3s"><div class="s-ico">✧</div><div class="s-name">Creative Direction</div><p class="s-desc">Strategic visual leadership aligned with business goals.</p><ul class="s-list"><li>Art direction</li><li>Campaign concepts</li><li>Design audits</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testi">
+  <div class="testi-in">
+    <div class="reveal">
+      <div class="s-label">Testimonials</div>
+      <h2 class="s-title">Clients who trusted the vision</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="tc reveal"><div class="tc-stars">★★★★★</div><div class="tc-q">"</div><p class="tc-text">The redesign exceeded every expectation. User engagement jumped 90% in month one. The attention to micro-interactions is unmatched.</p><div class="tc-auth"><div class="tc-av">MR</div><div><div class="tc-name">Ganesh Kumar</div><div class="tc-role">CEO, Aditihousing</div></div></div></div>
+      <div class="tc reveal" style="transition-delay:.15s"><div class="tc-stars">★★★★★</div><div class="tc-q">"</div><p class="tc-text">The brand identity captures exactly who we are — precise, bold, alive. The best creative decision we made this year.</p><div class="tc-auth"><div class="tc-av">MRS</div><div><div class="tc-name">Abi</div><div class="tc-role">Project Manager, Aditihousing</div></div></div></div>
+      <div class="tc reveal" style="transition-delay:.3s"><div class="tc-stars">★★★★★</div><div class="tc-q">"</div><p class="tc-text">Complete design system in 6 weeks. Our engineering team went from constant design debt to shipping features with confidence.</p><div class="tc-auth"><div class="tc-av">MR</div><div><div class="tc-name">Shadap</div><div class="tc-role">Head of Product,Kolkata</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="ct-in">
+    <div class="ct-hd reveal">
+      <div class="s-label">Get In Touch</div>
+      <h2 class="s-title">Ready to build something remarkable?</h2>
+      <p class="s-sub">Whether it's a new product, a rebrand, or an idea still taking shape — I'm open to hearing it.</p>
+    </div>
+    <div class="ct-grid">
+      <div class="fl reveal">
+        <div class="flg"><label class="fl-lbl">Your Name</label><input class="fi" type="text" placeholder="Alex Johnson"></div>
+        <div class="flg"><label class="fl-lbl">Email Address</label><input class="fi" type="email" placeholder="alex@company.com"></div>
+        <div class="flg"><label class="fl-lbl">Project Type</label><input class="fi" type="text" placeholder="e.g. UI/UX Design, Branding..."></div>
+        <div class="flg"><label class="fl-lbl">Tell Me About It</label><textarea class="fi" placeholder="Describe your project, goals, timeline..."></textarea></div>
+        <button class="btn-primary" style="width:100%;justify-content:center;padding:1rem;" onclick="formSubmit(this)">Send Message ↗</button>
+      </div>
+      <div class="reveal" style="transition-delay:.2s">
+        <div class="ct-links-ttl">Or reach me directly</div>
+        <a class="ci" data-t="email" href="mailto:hellosathishkumarv2305@gmail.com" onclick="copyVal(event,'hellosathishkumarv2305@gmail.com')">
+          <div class="ci-ico">✉</div><div><div class="ci-lbl">Email</div><div class="ci-val">hellosathishkumarv2305@gmail.com</div></div><span class="ci-arr">⊹</span>
+        </a>
+        <a class="ci" data-t="phone" href="tel:+919876543210" onclick="copyVal(event,'+91 9043213291')">
+          <div class="ci-ico">📞</div><div><div class="ci-lbl">Phone / WhatsApp</div><div class="ci-val">+91 9043213291</div></div><span class="ci-arr">⊹</span>
+        </a>
+        <a class="ci" data-t="linkedin" href="https://www.linkedin.com/in/sathish-kumar-v-276ab432a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_job_home%3BeeUUhdmNSTaaCjXpWIWp0w%3D%3D" target="_blank" rel="noopener">
+          <div class="ci-ico" style="font-family:'Space Grotesk',sans-serif;font-size:.75rem;font-weight:700">in</div><div><div class="ci-lbl">LinkedIn</div><div class="ci-val">linkedin.com/in/astudio</div></div><span class="ci-arr">↗</span>
+        </a>
+        <a class="ci" data-t="behance" href="https://www.behance.net/sathishkumarv5" target="_blank" rel="noopener">
+          <div class="ci-ico">◈</div><div><div class="ci-lbl">Behance</div><div class="ci-val">behance.net/sathishkumarv5</div></div><span class="ci-arr">↗</span>
+        </a>
+        <a class="ci" data-t="github" href="https://github.com/Sathish-2305" target="_blank" rel="noopener">
+          <div class="ci-ico">⌥</div><div><div class="ci-lbl">GitHub</div><div class="ci-val">github.com/Sathish-2305</div></div><span class="ci-arr">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-logo">Sathish-Portfolio</div>
+  <div class="f-note">© 2025 Sathish Kumar V · Designed &amp; Built with ♥</div>
+  <a href="#hero" class="f-top">Back to top ↑</a>
+</footer>
+</body>
+</html>
