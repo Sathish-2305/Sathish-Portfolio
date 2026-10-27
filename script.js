@@ -266,6 +266,19 @@ function copyVal(e, text) {
   toast.classList.add('show');
   setTimeout(()=>toast.classList.remove('show'), 2000);
 }
+firebase.initializeapp({
+  const firebaseConfig = {
+  apiKey: "AIzaSyBizJvYys6EhM_IErNEUG8SFDz1C-KUcyE",
+  authDomain: "my-portfolio-e7ee1.firebaseapp.com",
+  projectId: "my-portfolio-e7ee1",
+  storageBucket: "my-portfolio-e7ee1.firebasestorage.app",
+  messagingSenderId: "141222129146",
+  appId: "1:141222129146:web:93ade6df905b2d2755c843",
+  measurementId: "G-WVGWPZVEQW"
+};
+});
+const db = firebase.firestore();
+const form = document.getelementbyid ("suggestionform")
 
 /* ========================================================
    FORM SUBMIT
